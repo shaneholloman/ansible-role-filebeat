@@ -1,6 +1,6 @@
 # Ansible Role: Filebeat for ELK Stack
 
-[![CI](https://github.com/shaneholloman-org/ansible-role-filebeat/actions/workflows/ci.yml/badge.svg)](https://github.com/shaneholloman-org/ansible-role-filebeat/actions/workflows/ci.yml)
+[![CI](https://github.com/shaneholloman/ansible-role-filebeat/actions/workflows/ci.yml/badge.svg)](https://github.com/shaneholloman/ansible-role-filebeat/actions/workflows/ci.yml)
 
 An Ansible Role that installs [Filebeat](https://www.elastic.co/products/beats/filebeat) on RedHat/CentOS or Debian/Ubuntu.
 
@@ -105,13 +105,13 @@ None.
 ## Example Playbook
 
     - hosts: logs
-    
+
     - name: Set the java_packages variable (Debian/Ubuntu).
       set_fact:
         java_packages:
     - openjdk-8-jdk
       when: ansible_os_family == 'Debian'
-    
+
       roles:
         - shaneholloman.java
         - shaneholloman.elasticsearch
@@ -125,4 +125,3 @@ MIT / BSD
 ## Author Information
 
 This role was created in 2023
-
